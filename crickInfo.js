@@ -110,7 +110,7 @@ function createInfoFile(teamName,playerName,city,date,td){
   if(!fs.existsSync(pathTeam)){
       fs.mkdirSync(pathTeam);
   }
-   let str=playerName+" "+city+" "+date+" "+"99"+" "+"9.34"+" "+td+"\n";
+   let str=playerName+" "+city+" "+date+" "+td+"\n";
    str=JSON.stringify(str);
    let jsonData=JSON.parse(str);
       playerName=playerName+".txt";
